@@ -1,4 +1,18 @@
-<div class="navbar bg-gradient-to-b from-black to-transparent text-white fixed top-0 py-8">
+<script>
+    import { onMount } from 'svelte';
+
+    let isSolid = false;
+    onMount(() => { 
+
+        window.addEventListener("scroll", () => {
+            isSolid = window.scrollY > window.innerHeight - 96
+        });
+    });
+</script>
+
+<div
+    class="navbar {isSolid ? 'bg-black shadow-2xl' : 'bg-gradient-to-b from-black to-transparent'} text-white fixed top-0"
+>
     <div class="container mx-auto">
         <div class="flex-1">
             <a class="btn btn-ghost text-xl font-bold">Dino Rent Car</a>
