@@ -15,7 +15,7 @@
 >
     <div class="container mx-auto">
         <div class="flex-1">
-            <a class="btn btn-ghost text-xl font-bold">Dino Rent Car</a>
+            <a class="btn btn-ghost text-2xl font-bold">Dino Rent Car</a>
         </div>
         <div class="flex-none">
             <ul class="menu menu-horizontal px-1 text-base">
