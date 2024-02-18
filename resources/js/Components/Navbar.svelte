@@ -11,7 +11,7 @@
 </script>
 
 <div
-    class="navbar {isSolid ? 'bg-black shadow-2xl' : 'bg-gradient-to-b from-black to-transparent'} text-white fixed top-0"
+    class="z-50 navbar {isSolid ? 'bg-black shadow-2xl' : 'bg-gradient-to-b from-black to-transparent'} text-white fixed top-0"
 >
     <div class="container mx-auto">
         <div class="flex-1">

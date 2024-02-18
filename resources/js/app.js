@@ -1,5 +1,5 @@
-import { createInertiaApp } from '@inertiajs/svelte'
-import 'boxicons'
+import { createInertiaApp } from '@inertiajs/svelte';
+import 'boxicons';
 
 createInertiaApp({
     resolve: name => {

@@ -6,7 +6,10 @@
 </script>
 
 <Layout>
-    <div class="hero min-h-screen" style="background-image: url({heroImage});">
+    <div
+        class="hero min-h-screen mb-20"
+        style="background-image: url({heroImage});"
+    >
         <div class="hero-overlay bg-opacity-30 bg-black"></div>
         <div class="hero-content text-center text-white">
             <div class="">
@@ -79,7 +82,7 @@
         </div>
     </div>
 
-    <div class="mt-20">
+    <div class="mb-20 container mx-auto">
         <h1 class="text-4xl text-[#333333] font-bold text-center mb-4">
             Why Choose Us
         </h1>
@@ -91,7 +94,7 @@
                 <div
                     class="w-12 h-12 rounded-full bg-[#fff8f3] flex items-center justify-center"
                 >
-                    <i class="bx bx-car"></i>X
+                    <box-icon name="car"></box-icon>
                 </div>
                 <div>
                     <p class="font-medium text-[#333333] mb-2">
@@ -104,7 +107,7 @@
                 <div
                     class="w-12 h-12 rounded-full bg-[#fff8f3] flex items-center justify-center"
                 >
-                    <i class="bx bx-car"></i>X
+                    <box-icon type="solid" name="dollar-circle"></box-icon>
                 </div>
                 <div>
                     <p class="font-medium text-[#333333] mb-2">
@@ -117,7 +120,7 @@
                 <div
                     class="w-12 h-12 rounded-full bg-[#fff8f3] flex items-center justify-center"
                 >
-                    <i class="bx bx-car"></i>X
+                    <box-icon name="check-shield" type="solid"></box-icon>
                 </div>
                 <div>
                     <p class="font-medium text-[#333333] mb-2">
@@ -129,7 +132,7 @@
         </div>
     </div>
 
-    <div class="my-20 container mx-auto">
+    <div class="mb-20 mx-auto container">
         <p class="font-medium text-[#999999] text-center text-sm">
             Research Car models
         </p>
@@ -139,7 +142,7 @@
         <div class="grid grid-cols-4 mt-16 gap-16 justify-center items-center">
             {#each { length: 4 } as _, i}
                 <div
-                    class="card card-compact bg-white drop-shadow-[0_10px_10px_rgba(0,0,0,0.25)] rounded-3xl"
+                    class="card card-compact bg-white drop-shadow-[0_5px_10px_rgba(0,0,0,0.25)] rounded-3xl"
                 >
                     <figure>
                         <img src={carImage} alt="Car" />
@@ -186,6 +189,69 @@
                 class="btn bg-white shadow-none outline-1 border-black text-black hover:bg-black hover:text-white hover:drop-shadow-lg"
                 >Show All Cars</button
             >
+        </div>
+    </div>
+
+    <div class="container mx-auto mb-20">
+        <h1 class="font-bold text-2xl mb-4">What Our Clients Say</h1>
+        <p class="font-medium text-[#999999]">
+            Testimonials from our best clients
+        </p>
+
+        <div class="grid grid-cols-4 gap-8 mt-8">
+            {#each { length: 4 } as _, i}
+                <div class="rounded-2xl shadow-md p-6">
+                    <q class="text-[#999999] text-sm"
+                        >Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Tenetur officiis sit, placeat rerum neque dolore
+                        praesentium nisi alias suscipit doloribus.</q
+                    >
+                    <div class="flex items-end justify-between mt-8">
+                        <div class="flex items-center gap-x-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-[#333333] flex items-center justify-center"
+                            >
+                                <box-icon type="solid" name="user" color="#fff"
+                                ></box-icon>
+                            </div>
+                            <div class="text-sm">
+                                <p class="font-medium text-[#333333] mb-2">
+                                    Wahyu Miftahul Aflah
+                                </p>
+                                <p class="text-[#999999]">Depok, Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-center gap-x-2">
+                            <box-icon name="star" type="solid" color="#e69c44"
+                            ></box-icon><span class="text-[#e69c44]">4.9</span>
+                        </div>
+                    </div>
+                </div>
+            {/each}
+        </div>
+    </div>
+
+    <div class="bg-[#f2f2f2] py-16">
+        <div class="container-sm text-center">
+            <h1 class="text-[#333333] font-bold text-3xl mb-4">
+                Get The Latest Updates
+            </h1>
+            <p class="text-[#999999] font-medium">
+                We'll send you some updates and special offers
+            </p>
+
+            <div class="max-w-2xl flex flex-col items-center bg-white mx-auto py-8 mt-12 rounded-lg shadow-sm">
+                <div class="text-[#999999] p-3 rounded-lg border-[#f2f2f2] border mb-4">
+                    <input
+                        class="input"
+                        placeholder="Enter Your Email Address"
+                    />
+                    <button class="ml-4 btn bg-black hover:bg-black hover:drop-shadow-xl text-white font-medium"
+                        >Get Updates</button
+                    >
+                </div>
+                <p class="text-sm text-[#999999]">Want to become member in my community? <span class="text-[#d4d4d4] font-semibold">Join with us</span></p>
+            </div>
         </div>
     </div>
 </Layout>
